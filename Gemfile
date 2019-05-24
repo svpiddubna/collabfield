@@ -28,6 +28,8 @@ gem 'jquery-rails'
 
 gem 'devise'
 
+gem 'faker'
+
 gem 'bootstrap_form'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
