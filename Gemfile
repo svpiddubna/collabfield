@@ -30,6 +30,8 @@ gem 'devise'
 
 gem 'faker'
 
+gem 'will_paginate', '~> 3.1.0'
+
 gem 'bootstrap_form'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
