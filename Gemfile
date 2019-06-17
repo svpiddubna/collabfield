@@ -72,7 +72,6 @@ group :test do
   gem 'factory_bot_rails'
   gem 'rails-controller-testing'
   gem 'headless'
-  gem "capybara-webkit"
   gem 'database_cleaner'
 end
 
