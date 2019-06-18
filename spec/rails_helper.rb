@@ -8,7 +8,7 @@ require 'rspec/rails'
 
 # Add additional requires below this line. Rails is not loaded until this point!
 
-require 'capybara/webkit'
+# require 'capybara/webkit'
 require 'factory_bot'
 require 'capybara/rspec'
 
