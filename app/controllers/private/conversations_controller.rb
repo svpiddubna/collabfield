@@ -5,12 +5,6 @@ class Private::ConversationsController < ApplicationController
     end
   end
 
-  private
-
-  def conversation_exist?
-    Private::Conversation.between_users(current_user.id, @post.user.id).present?
-  end
-
   def create
     recipient_id = Post.find(params[:post_id]).user.id
     conversation = Private::Conversation.new(sender_id: current_user.id,
@@ -27,5 +21,11 @@ class Private::ConversationsController < ApplicationController
         format.js {render partial: 'posts/show/contact_user/message_form/fail'}
       end
     end
+  end
+
+  private
+
+  def conversation_exist?
+    Private::Conversation.between_users(current_user.id, @post.user.id).present?
   end
 end
